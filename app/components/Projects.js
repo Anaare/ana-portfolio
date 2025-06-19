@@ -13,6 +13,7 @@ export default function Projects() {
           href="https://jammming-final.netlify.app/"
           projectName="Jammming"
           description="A React web application that integrates with the Spotify API allowing users to search for songs, create custom playlists, and save them directly to their Spotify account — all in a sleek, interactive interface."
+          stack={["React", "Spotify Auth", "CSS Modules", "Netlify"]}
         />
         <ProjectCard
           src={oasisApp}
@@ -20,6 +21,7 @@ export default function Projects() {
           href="https://the-wild-oasis-app-wine.vercel.app/dashboard"
           projectName="Wild Oasis App"
           description="A full-featured hotel management application built for internal use by hotel employees. This app helps staff manage cabins, bookings, and guests efficiently — all in a modern, responsive interface with dark mode support."
+          stack={["React", "Supabase", "React query", "Vercel"]}
         />
         <ProjectCard
           src={oasisWebsite}
@@ -27,6 +29,13 @@ export default function Projects() {
           href="https://the-wild-oasis-website-ten-steel.vercel.app/"
           projectName="Wild Oasis Website"
           description="Welcome to Wild Oasis, a modern web application for exploring, booking, and managing your stay at our cozy wilderness cabins."
+          stack={[
+            "React",
+            "Next.js",
+            "Next Auth",
+            "Tailwind CSS",
+            "Context API",
+          ]}
         />
       </div>
     </div>

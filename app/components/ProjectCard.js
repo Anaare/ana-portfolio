@@ -1,6 +1,7 @@
+import Link from "next/link";
 import Image from "next/image";
 import macbook from "../../public/images/macbook.png";
-import Link from "next/link";
+import StackContainer from "./StackContainer";
 
 export default function ProjectCard({
   src,
@@ -8,6 +9,7 @@ export default function ProjectCard({
   description,
   href,
   projectName,
+  stack,
 }) {
   return (
     <div>
@@ -37,6 +39,7 @@ export default function ProjectCard({
           <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
             {description}
           </p>
+          <StackContainer stack={stack} />
         </div>
       </div>
     </div>

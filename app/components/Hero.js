@@ -9,11 +9,12 @@ export default function Hero() {
         className="w-40 h-40 rounded-full shadow-lg"
       />
       <div className="hero">
-        <h2>Hello, I'm Ana 👋</h2>
-        <p className="mt-3 text-xl">
-          Front-end developer focused on bringing great designs to life with
-          clean, responsive & accessible code{" "}
-          <span className="text-2xl">👩‍💻</span>
+        <h2 className="text-4xl font-extrabold text-balance">
+          Hi, I&apos;m Ana 👋
+        </h2>
+        <p className="mt-4 text-xl leading-relaxed text-gray-700 dark:text-gray-300 text-balance">
+          A front-end developer with a finance background — I bring great
+          designs to life with clean, accessible code.
         </p>
       </div>
     </section>
