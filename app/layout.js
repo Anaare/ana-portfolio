@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Playfair_Display } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -15,7 +16,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={playfair.className}>
-        <main>{children}</main>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

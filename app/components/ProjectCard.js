@@ -36,9 +36,7 @@ export default function ProjectCard({
           >
             {projectName}
           </Link>
-          <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
-            {description}
-          </p>
+          <p className="text-base leading-relaxed">{description}</p>
           <StackContainer stack={stack} />
         </div>
       </div>

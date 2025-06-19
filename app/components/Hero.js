@@ -12,7 +12,7 @@ export default function Hero() {
         <h2 className="text-4xl font-extrabold text-balance">
           Hi, I&apos;m Ana 👋
         </h2>
-        <p className="mt-4 text-xl leading-relaxed text-gray-700 dark:text-gray-300 text-balance">
+        <p className="mt-4 text-xl leading-relaxed text-balance">
           A front-end developer with a finance background — I bring great
           designs to life with clean, accessible code.
         </p>

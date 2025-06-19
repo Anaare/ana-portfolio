@@ -6,12 +6,19 @@ export default function DarkMode() {
 
   // Optional: persist dark mode in localStorage or use <html class="dark">
   useEffect(() => {
-    if (isDark) {
+    const storedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+
+    if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+      setIsDark(true);
       document.documentElement.classList.add("dark");
     } else {
+      setIsDark(false);
       document.documentElement.classList.remove("dark");
     }
-  }, [isDark]);
+  }, []);
 
   return (
     <div className="flex items-center justify-between gap-2">
@@ -33,7 +40,17 @@ export default function DarkMode() {
 
       {/* TOGGLE */}
       <button
-        onClick={() => setIsDark(!isDark)}
+        onClick={() => {
+          const newTheme = !isDark;
+          setIsDark(newTheme);
+          if (newTheme) {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme", "light");
+          }
+        }}
         className={`relative inline-flex h-6 w-12 items-center rounded-full transition-colors ${
           isDark ? "bg-slate-600" : "bg-slate-300"
         }`}
