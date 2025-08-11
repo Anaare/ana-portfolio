@@ -26,7 +26,7 @@ export default function Skills() {
         <div>
           <h4>Database</h4>
           <ul>
-            <li>MongoDB (learning)</li>
+            <li>MongoDB</li>
             <li>PostgreSQL (learning)</li>
           </ul>
         </div>

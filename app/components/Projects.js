@@ -2,6 +2,7 @@ import ProjectCard from "./ProjectCard";
 import jammming from "../../public/images/jammming.png";
 import oasisApp from "../../public/images/wild-oasis-app.png";
 import oasisWebsite from "../../public/images/wild-oasis-website.png";
+import budgetPlanner from "../../public/images/budget-planner.png";
 export default function Projects() {
   return (
     <div className="about-div">
@@ -36,6 +37,14 @@ export default function Projects() {
             "Tailwind CSS",
             "Context API",
           ]}
+        />
+        <ProjectCard
+          src={budgetPlanner}
+          alt="Budget Planner app screenshot"
+          href="https://budget-planner-j2qi.vercel.app/"
+          projectName="Budget Planner"
+          description="A modern budgeting application that helps users track income, manage expenses, and analyze their financial activity over time. Built with a responsive UI, intuitive charts, and secure user authentication."
+          stack={["React", "Next.js", "Next Auth", "Tailwind CSS", "Mongo DB"]}
         />
       </div>
     </div>
